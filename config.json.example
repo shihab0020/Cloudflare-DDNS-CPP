@@ -1,5 +1,6 @@
 {
   "api_token": "YOUR_API_TOKEN",
+  "log_retention_days": 30,
   "check_interval": 300,
   "records": [
     {
