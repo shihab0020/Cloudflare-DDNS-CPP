@@ -1,0 +1,12 @@
+[Unit]
+Description=Cloudflare DDNS Updater
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/cf_ddns
+Restart=always
+User=root
+WorkingDirectory=/opt/cf_ddns
+
+[Install]
+WantedBy=multi-user.target

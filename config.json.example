@@ -1,0 +1,14 @@
+{
+  "api_token": "your_cloudflare_api_token",
+  "check_interval": 300,
+  "log_retention_days": 30,
+  "records": [
+    {
+      "zone_id": "your_zone_id",
+      "record_id": "your_record_id",
+      "name": "your.sub.domain.com",
+      "enable_ipv6": true,
+      "enable_proxy": false
+    }
+  ]
+}
