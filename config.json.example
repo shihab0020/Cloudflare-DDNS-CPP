@@ -1,14 +1,22 @@
 {
-  "api_token": "your_cloudflare_api_token",
+  "api_token": "YOUR_API_TOKEN",
   "check_interval": 300,
-  "log_retention_days": 30,
   "records": [
     {
-      "zone_id": "your_zone_id",
-      "record_id": "your_record_id",
-      "name": "your.sub.domain.com",
-      "enable_ipv6": true,
+      "zone_id": "ZONE_ID_1",
+      "record_id": "RECORD_ID_1",
+      "record_name": "host.example.com",
+      "enable_ipv4": true,
+      "enable_ipv6": false,
       "enable_proxy": false
+    },
+    {
+      "zone_id": "ZONE_ID_2",
+      "record_id": "RECORD_ID_2",
+      "record_name": "ipv6.example.com",
+      "enable_ipv4": false,
+      "enable_ipv6": true,
+      "enable_proxy": true
     }
   ]
 }
